@@ -1,28 +1,19 @@
-# 🛡️ Phishing Link Scanner
+# Password Strength Checker
 
-A Python-based tool for detecting and identifying phishing URLs.  
-Developed for the internship program at **Brainwave Matrix Solutions**.
+A simple Python tool that assesses the strength of passwords entered by users.  
+It analyzes factors such as length, complexity, and commonness, and provides useful feedback to help users create stronger passwords.
 
-## 🚀 Features
+## Features
 
-- **Manual Analysis**:  
-  Detects phishing links using rule-based checks such as:
-  - Suspicious keywords (login, verify, secure, etc.)
-  - Use of IP addresses instead of domain names
-  - Suspicious domain extensions (.ru, .cn, .xyz, etc.)
-  - Use of link shorteners (bit.ly, tinyurl, etc.)
-  - Use of suspicious symbols or very long URLs
-  - Non-HTTPS links
+- Checks password length (minimum recommended: 8 characters)
+- Ensures use of uppercase and lowercase letters
+- Checks for numbers and special characters
+- Warns if the password is too common
+- Gives suggestions to improve weak passwords
 
-- **Real-time Safe Browsing Check**:  
-  Integrates with **Google Safe Browsing API** to verify if a link is reported as malicious, phishing, or potentially harmful.
+## Usage Example
 
-## 🛠️ Technologies
-
-- **Python 3**
-- [Google Safe Browsing API](https://developers.google.com/safe-browsing/)
-- `requests` library
-
-## 📸 Example
-
-**Input:**
+```bash
+$ python password_checker.py
+Enter your password: MyPa$$w0rd123
+Password Strength: Very Strong
